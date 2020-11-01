@@ -1,0 +1,26 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.home__form {
+  display: flex;
+  margin: 0 16px;
+  justify-content: space-between;
+}
+
+.home__formDateTime {
+  width: 185px;
+}
+
+.home__formDuration {
+  width: 110px;
+}
+
+.home__guests {
+  margin: 16px !important;
+}
+
+.home__button {
+  align-self: center;
+}

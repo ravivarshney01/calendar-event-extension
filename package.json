@@ -1,11 +1,11 @@
 {
-  "name": "chrome-extension-boilerplate-react",
+  "name": "chrome-extension-create-meet",
   "version": "3.1.2",
-  "description": "A chrome extension boilerplate built with React 17 and Webpack 4",
+  "description": "A chrome extension to create a goodle with and share with friends",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lxieyang/chrome-extension-boilerplate-react.git"
+    "url": ""
   },
   "scripts": {
     "build": "node utils/build.js",
@@ -13,11 +13,18 @@
     "prettier": "prettier --write '**/*.{js,jsx,css,html}'"
   },
   "dependencies": {
+    "@date-io/moment": "1.x",
     "@hot-loader/react-dom": "^17.0.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/pickers": "^3.2.10",
     "@types/chrome": "0.0.125",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
+    "material-ui-chip-input": "^2.0.0-beta.2",
+    "moment": "^2.29.1",
     "react": "^17.0.1",
+    "react-chrome-extension-router": "^1.1.0",
     "react-dom": "^17.0.1",
     "react-hot-loader": "^4.13.0"
   },

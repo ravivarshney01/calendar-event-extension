@@ -1,0 +1,10 @@
+.meet {
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.meet__back {
+  align-self: center;
+  margin-top: 50px !important;
+}

@@ -1,29 +1,33 @@
 {
   "name": "Chrome Extension with React & Webpack",
-  "options_page": "options.html",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0FCf41d28gNnW6Jp1l6OpOpCUu70xJfgVo3WmQtuaMg49D99p91m95UNnwLCJGSsKGh0pTkUcMTkf63iJuCifDPJLWeD3rGE8WrmRqF76cDPzGEd2bDqa46gvkHF6qT1LDvAXHGtUa9ZE2UhW96umJL1wfw66Hx27bNP2bDwROp1GRhfreqvcyJxnRu0S7EM6S/v6lCLtvfOcuHnX7K8uNLYwraAxDZlCzKqQa3Z5TLZDYERx+FqbC82F5FwzqGm31icuGO40dfPUbKEpMFQrE+NvArjFSN23FT1yv6R41R37wWq82PIldKaXjMEjUgLecImSlBB05j/fA41TU6Y1wIDAQAB",
   "background": {
     "page": "background.html"
   },
   "browser_action": {
     "default_popup": "popup.html",
-    "default_icon": "icon-34.png"
+    "default_icon": "logo.png"
   },
-  "chrome_url_overrides": {
-    "newtab": "newtab.html"
+  "permissions": ["identity", "identity.email"],
+  "oauth2": {
+    "client_id": "331162920615-32q9dsvpclu7556n1qeonuocti8kpdeg.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/calendar"]
   },
-  "icons": {
-    "128": "icon-128.png"
-  },
-  "content_scripts": [{
-    "matches": ["http://*/*", "https://*/*", "<all_urls>"],
-    "js": ["contentScript.bundle.js"],
-    "css": ["content.styles.css"]
-  }],
-  "web_accessible_resources": [
-    "content.styles.css",
-    "icon-128.png",
-    "icon-34.png"
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "<all_urls>"],
+      "js": ["contentScript.bundle.js"],
+      "css": ["content.styles.css"]
+    }
   ],
+  "web_accessible_resources": ["content.styles.css"],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+M"
+      }
+    }
+  },
   "manifest_version": 2,
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }

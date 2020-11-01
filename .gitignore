@@ -18,3 +18,6 @@
 
 # secrets
 secrets.*.js
+build.crx
+build.pem
+key.pem
