@@ -11,15 +11,20 @@ const Home = () => {
   const [dateTime, setDateTime] = useState(new Date())
   const [duration, setDuration] = useState(30)
   const [guests, setGuests] = useState([])
-  const [error, setError] = useState(false)
+  const [error, setError] = useState({isError: false ,msg: null})
+  
   useEffect(() => {
     console.log(dateTime)
   }, [dateTime])
 
   const handleAddChip = (guest) => {
-    let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
-    if (guest.match(mailformat)) {
+    let mailformat = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
+    if (mailformat.test(guest)) {
       setGuests([...guests, guest])
+      setError({isError: false})
+    }
+    else{
+      setError({isError: true,msg: "Please input valid email"})
     }
   }
   const handleDeleteChip = (guest, index) => {
@@ -73,7 +78,7 @@ const Home = () => {
           })
       })
     } else {
-      setError(true)
+      setError({isError: true, msg: "Date-Time and durations are required."})
     }
   }
 
@@ -128,10 +133,10 @@ const Home = () => {
         Create Event
       </Button>
       <Snackbar
-        open={error}
+        open={error.isError}
         autoHideDuration={6000}
         onClose={handleClose}
-        message='*Date-Time and durations are required.'
+        message={error.msg}
       />
     </div>
   )
