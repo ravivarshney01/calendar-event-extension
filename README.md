@@ -14,9 +14,23 @@ It is a chrome extension to create a google meet event and share with friends
 ![](home.png)
 ![](ss.png)
 
+### How to run it
+
+- clone this repository and change directory to calendar calendar-event-extension
+  ```
+  git clone https://github.com/ravivarshney01/calendar-event-extension
+  ```
+  ```
+  cd calendar-event-extension
+  ```
+- `npm i`
+- `npm start`
+- open chrome://extensions/ and enable developer mode
+- click on load unpacked and select the build directory in the clone
+-
+
 <details>
   <summary>Chrome Extenstion Boilerplate Docs</summary>
-
 
 # Chrome Extension Boilerplate with React 17 and Webpack 5
 
