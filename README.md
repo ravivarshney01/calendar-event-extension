@@ -23,11 +23,10 @@ It is a chrome extension to create a google meet event and share with friends
   ```
   cd calendar-event-extension
   ```
-- `npm i`
-- `npm start`
+- `yarn`
+- `yarn start`
 - open chrome://extensions/ and enable developer mode
 - click on load unpacked and select the build directory in the clone
--
 
 <details>
   <summary>Chrome Extenstion Boilerplate Docs</summary>
