@@ -1,3 +1,23 @@
+## Calendar-event-extension
+
+It is a chrome extension to create a google meet event and share with friends
+
+### Features
+
+- Google Login
+- Set date, time and duration for the meet(required)
+- Guests list(optional)
+- Automatic copy meet url to clipboard
+- Notications and reminders to host & guests
+- Switch google user
+
+![](home.png)
+![](ss.png)
+
+<details>
+  <summary>Chrome Extenstion Boilerplate Docs</summary>
+
+
 # Chrome Extension Boilerplate with React 17 and Webpack 5
 
 [![npm](https://img.shields.io/npm/v/chrome-extension-boilerplate-react)](https://www.npmjs.com/package/chrome-extension-boilerplate-react)
@@ -143,3 +163,5 @@ ApiCall({ key: secrets.key });
 ---
 
 Michael Xieyang Liu | [Website](https://lxieyang.github.io)
+
+</details>

@@ -36,7 +36,11 @@ const Header = ({ token, email, setToken }) => {
           </Typography>
         )}
       </div>
-      <img src={logo} className='header__logo' />
+      <img
+        src={logo}
+        className='header__logo'
+        alt="logo"
+      />
     </div>
   )
 }

@@ -1,5 +1,5 @@
 {
-  "name": "Chrome Extension with React & Webpack",
+  "name": "calendar-event-extension",
   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0FCf41d28gNnW6Jp1l6OpOpCUu70xJfgVo3WmQtuaMg49D99p91m95UNnwLCJGSsKGh0pTkUcMTkf63iJuCifDPJLWeD3rGE8WrmRqF76cDPzGEd2bDqa46gvkHF6qT1LDvAXHGtUa9ZE2UhW96umJL1wfw66Hx27bNP2bDwROp1GRhfreqvcyJxnRu0S7EM6S/v6lCLtvfOcuHnX7K8uNLYwraAxDZlCzKqQa3Z5TLZDYERx+FqbC82F5FwzqGm31icuGO40dfPUbKEpMFQrE+NvArjFSN23FT1yv6R41R37wWq82PIldKaXjMEjUgLecImSlBB05j/fA41TU6Y1wIDAQAB",
   "background": {
     "page": "background.html"
@@ -20,7 +20,7 @@
       "css": ["content.styles.css"]
     }
   ],
-  "web_accessible_resources": ["content.styles.css"],
+  "web_accessible_resources": ["content.styles.css", "logo.png"],
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {

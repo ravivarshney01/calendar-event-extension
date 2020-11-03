@@ -1,7 +1,7 @@
 {
-  "name": "create-meet-link",
+  "name": "calendar-event-extention",
   "version": "3.1.2",
-  "description": "A chrome extension to create a google meet event and share with friends",
+  "description": "A chrome extension to create a google calendar event with meet and invite guests",
   "license": "MIT",
   "repository": {
     "type": "git",
