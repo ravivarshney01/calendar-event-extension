@@ -35,7 +35,7 @@ const Home = () => {
     if (moment(dateTime).isValid() && duration) {
       chrome.identity.getAuthToken({ interactive: true }, function (token) {
         var event = {
-          summary: '',
+          summary: 'Meet',
           start: {
             dateTime: dateTime.toISOString(),
             timeZone: 'Asia/Kolkata',
